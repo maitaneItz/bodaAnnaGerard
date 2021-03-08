@@ -26,8 +26,11 @@ export const GlobalStyles = createGlobalStyle`
 
   * {
     box-sizing: border-box;
-    
+
     font-family: "Tahoma", sans-serif;
+    background-color: ${tokens.BaseColor};
     color: ${tokens.FontColor};
+    font-size: ${tokens.FontSizeBase};
+    line-height: 27px;
   }
 `;
