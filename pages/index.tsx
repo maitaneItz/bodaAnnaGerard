@@ -1,5 +1,11 @@
-import { Container } from "../components";
+import { Container, NosCasamos } from "../components";
 
 export default function Home() {
-  return <Container>hola</Container>;
+  return (
+  <Container>
+    hola
+    <NosCasamos />
+  </Container>
+  )
 }
+
