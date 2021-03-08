@@ -1,5 +1,9 @@
-import { Container } from "../components";
+import { Header } from "../components";
 
 export default function Home() {
-  return <Container>hola</Container>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
