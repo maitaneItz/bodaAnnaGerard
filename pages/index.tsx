@@ -5,7 +5,6 @@ export default function Home() {
     <>
     <Header />
   <Container>
-    hola
     <NosCasamos />
   </Container>
   </>
