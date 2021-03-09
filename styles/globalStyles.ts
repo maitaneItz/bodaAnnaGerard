@@ -39,4 +39,8 @@ export const GlobalStyles = createGlobalStyle`
     font-size: ${tokens.FontSizeBase};
     line-height: 27px;
   }
+
+  img {
+    max-width: 100%;
+  }
 `;
