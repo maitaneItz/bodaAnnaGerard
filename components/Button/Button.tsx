@@ -10,6 +10,8 @@ export const Button = styled.button`
     color: ${BaseColor};
     border-radius: 4px;
     padding: ${SpaceS} ${SpaceXxl};
+    transition: all .5s ease;
+
 
     &:hover{
         cursor: pointer;
