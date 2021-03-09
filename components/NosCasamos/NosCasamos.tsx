@@ -1,6 +1,8 @@
+import { relative } from 'node:path'
 import React from 'react'
 import styled from 'styled-components'
-import { FontSizeLarge, SpaceL, SpaceXl, SpaceXxl } from '../../dictionary/variables'
+import { FontSizeLarge, SpaceL, SpaceM, SpaceS, SpaceXl, SpaceXs, SpaceXxl, SpaceXxxl } from '../../dictionary/variables'
+import { isMobile } from '../../styles/media'
 import { Button } from '../Button'
 import { Container } from '../Container'
 export const NosCasamos = () => {
@@ -25,7 +27,7 @@ export const NosCasamos = () => {
             </Button>
             </TextWrapper>
             <ImageWrapper>
-            <img src="/images/NosCasamos.jpeg" alt="¡Nos casamos!" />
+            <img src="/images/NosCasamos.jpeg" alt="¡Nos casamos!" loading="lazy" />
             </ImageWrapper>
         </Content>
     </Container>
@@ -36,20 +38,46 @@ const Title = styled.p`
     font-size: ${FontSizeLarge};
     font-family: "Juana Alt";
     font-weight: 600;
+    @media ${isMobile}{
+        text-align: center;
+    }
 `
 const Content = styled.div`
-    display: flex; 
-    align-items: center; 
+    display: grid;
+    grid-template-columns: 50% 45%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Text Image";
+    column-gap: ${SpaceL};
+    row-gap: ${SpaceXl};
+    @media ${isMobile}{
+        grid-template-areas: "Image" 
+                              "Text" ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        row-gap: ${SpaceXs};
+    }
+    align-items: center;
+    padding-bottom: ${SpaceXxxl};
 `
 const TextWrapper = styled.div`
-    flex-basis: 50%;
-    margin-right: ${SpaceXxl}
+    grid-area: Text;
+    display: block; 
+    position: relative;
+    @media ${isMobile}{
+        text-align: center;
+    }
 `
 const Text = styled.p`
-    margin-bottom:${SpaceL}
+    margin-bottom:${SpaceL};
+    & > strong {
+        white-space: pre;
+    }
 `
+
+
 const ImageWrapper = styled.div`
-    flex-basis: 45%;
+grid-area: Image;
+
     & > img {
         width: 100%;
     }

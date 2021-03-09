@@ -1,7 +1,8 @@
 import styled from 'styled-components'
-import { BaseColor, FontSizeMedium, PrimaryColor, SpaceS, SpaceXxl } from '../../dictionary/variables'
+import { BaseColor, FontSizeMedium, PrimaryColor, SecondaryColor, SpaceS, SpaceXxl } from '../../dictionary/variables'
 
 export const Button = styled.button`
+    position: relative;
     font-family: "Juana Alt";
     font-weight: 400;
     font-size: ${FontSizeMedium};
@@ -13,8 +14,10 @@ export const Button = styled.button`
     &:hover{
         cursor: pointer;
         color: ${PrimaryColor};
+        font-weight: 400;
         background-color: ${BaseColor};
-        border: 1px solid  ${PrimaryColor};
+        border: 2px solid  ${PrimaryColor};
+        transition: all .5s ease;
     }
 
 `
