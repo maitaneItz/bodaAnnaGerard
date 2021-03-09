@@ -10,12 +10,12 @@ export const Wrapper = styled.div`
   background-size: cover;
   background-position: center;
   @media ${isMobile}{
-  background-position: -470px center;
-
+    background-position: -470px center;
   }
   background-color: rgba(255,255,255,0.8);
   background-blend-mode: hue;
   
+  margin-bottom: ${tokens.SpaceXxl};
   ${Container} {
     height: 100%;
   }
