@@ -11,6 +11,7 @@ export const Button = styled.button`
     border-radius: 4px;
     padding: ${SpaceS} ${SpaceXxl};
     transition: all .5s ease;
+    outline:none;
 
 
     &:hover{

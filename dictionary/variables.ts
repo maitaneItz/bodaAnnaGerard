@@ -1,6 +1,5 @@
 export const PrimaryColor = "#0D5079";
 export const SecondaryColor = "#CBEDE4";
-// export const BaseColor = "#FFFFF9";
 export const BaseColor = "#F9F9F9";
 export const FontColor = "#2C2B2C";
 export const FontSizeSmall = "18px"; // the small size of the font
