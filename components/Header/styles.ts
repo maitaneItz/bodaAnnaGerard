@@ -6,9 +6,16 @@ import { Container } from "../Container";
 export const Wrapper = styled.div`
   height: 100vh;
   padding: ${tokens.SpaceXxxl} 0;
-  background: url("/images/casa.svg") no-repeat;
-  background-position: center ${tokens.SpaceXxxl};
+  background: url("/images/fondo_cabecera.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media ${isMobile}{
+  background-position: -470px center;
 
+  }
+  background-color: rgba(255,255,255,0.8);
+  background-blend-mode: hue;
+  
   ${Container} {
     height: 100%;
   }

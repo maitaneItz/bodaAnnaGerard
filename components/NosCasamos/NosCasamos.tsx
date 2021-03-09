@@ -4,10 +4,9 @@ import styled from 'styled-components'
 import { FontSizeLarge, SpaceL, SpaceM, SpaceS, SpaceXl, SpaceXs, SpaceXxl, SpaceXxxl } from '../../dictionary/variables'
 import { isMobile } from '../../styles/media'
 import { Button } from '../Button'
-import { Container } from '../Container'
 export const NosCasamos = () => {
     return(
-    <Container>
+    <>
         <Title>¡Nos casamos!</Title>
         <Content>
             <TextWrapper>
@@ -30,7 +29,7 @@ export const NosCasamos = () => {
             <img src="/images/NosCasamos.jpeg" alt="¡Nos casamos!" loading="lazy" />
             </ImageWrapper>
         </Content>
-    </Container>
+    </>
     )
 }
 
