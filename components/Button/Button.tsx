@@ -8,6 +8,13 @@ export const Button = styled.button`
     background-color: ${PrimaryColor};
     color: ${BaseColor};
     border-radius: 4px;
-    padding: ${SpaceS} ${SpaceXxl}
+    padding: ${SpaceS} ${SpaceXxl};
+
+    &:hover{
+        cursor: pointer;
+        color: ${PrimaryColor};
+        background-color: ${BaseColor};
+        border: 1px solid  ${PrimaryColor};
+    }
 
 `
