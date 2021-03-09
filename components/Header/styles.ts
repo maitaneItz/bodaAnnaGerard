@@ -9,9 +9,6 @@ export const Wrapper = styled.div`
   background: url("/images/fondo_cabecera.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  @media ${isMobile}{
-    background-position: -470px center;
-  }
   background-color: rgba(255,255,255,0.8);
   background-blend-mode: hue;
   

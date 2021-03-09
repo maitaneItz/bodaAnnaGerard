@@ -26,6 +26,7 @@ export const NosCasamos = () => {
             </Button>
             </TextWrapper>
             <ImageWrapper>
+            <Chincheta />
             <img src="/images/NosCasamos.jpeg" alt="¡Nos casamos!" loading="lazy" />
             </ImageWrapper>
         </Content>
@@ -43,17 +44,18 @@ const Title = styled.p`
 `
 const Content = styled.div`
     display: grid;
-    grid-template-columns: 50% 45%;
+    grid-template-columns: 50% 40%;
     grid-template-rows: 1fr;
     grid-template-areas: "Text Image";
-    column-gap: ${SpaceL};
+    column-gap: 80px;
     row-gap: ${SpaceXl};
     @media ${isMobile}{
         grid-template-areas: "Image" 
                               "Text" ;
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
-        row-gap: ${SpaceXs};
+        row-gap: ${SpaceL};
+        justify-items: center;
     }
     align-items: center;
     padding-bottom: ${SpaceXxxl};
@@ -73,14 +75,46 @@ const Text = styled.p`
     }
 `
 
-
 const ImageWrapper = styled.div`
-grid-area: Image;
+    position: relative;
+    grid-area: Image;
+    background-color:white;
+    padding:10px 10px 50px 10px;
+    box-shadow:10px 10px 30px rgba(0, 0, 0, 0.35);
+    transform:rotate(10deg);
+    -ms-transform:rotate(10deg); /* IE9 */
+    -webkit-transform:rotate(10deg); /* Safari y Chrome */
+    -moz-transform:rotate(10deg); 
+
+    @media ${isMobile}{
+        width: 90%;
+        transform:rotate(5deg);
+        -ms-transform:rotate(5deg); /* IE9 */
+        -webkit-transform:rotate(5deg); /* Safari y Chrome */
+        -moz-transform:rotate(5deg); 
+    }
 
     & > img {
         width: 100%;
     }
+
 `
 
+const Chincheta = () => {
+    return (
+        <ChinchetaWrapper>
+            <img src="/images/chincheta.png" />
+        </ChinchetaWrapper>
+    )
+}
+
+const ChinchetaWrapper = styled.div`
+    position: absolute;
+    top: -10px;
+    left: 41%;
+    & > img {
+        width: 20%;
+    }
+`
 
 
