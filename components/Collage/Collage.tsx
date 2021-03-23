@@ -1,11 +1,12 @@
 import { Container } from "../Container";
-import { Wrapper, Left, Right } from "./styles";
+import { Polaroid } from "../Polaroid";
+import { Wrapper } from "./styles";
 
 export const Collage = () => (
   <Container>
     <Wrapper>
-      <Left />
-      <Right />
+      <Polaroid image="/images/AnnaGerard1.jpeg" alt="" />
+      <Polaroid image="/images/AnnaGerard2.jpeg" alt="" />
     </Wrapper>
   </Container>
 );
