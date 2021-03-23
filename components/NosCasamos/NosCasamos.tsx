@@ -28,7 +28,11 @@ export const NosCasamos = () => {
           </Text>
           <Button>¡Me apunto!</Button>
         </TextWrapper>
-        <StyledPolaroid image="/images/NosCasamos.jpeg" alt="¡Nos casamos!" />
+        <StyledPolaroid
+          image="/images/NosCasamos.jpeg"
+          alt="¡Nos casamos!"
+          tapePositions={["top"]}
+        />
       </Content>
     </>
   );
