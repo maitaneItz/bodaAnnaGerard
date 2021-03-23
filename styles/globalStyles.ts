@@ -22,6 +22,12 @@ export const GlobalStyles = createGlobalStyle`
     font-family: "Juana Alt";
     src: url("/fonts/Juana Alt Light.ttf");
     font-weight: 200;
+  } 
+  
+  @font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto-Light.ttf");;
+    font-weight: 200;
   }
 
   * {
@@ -33,7 +39,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
 
-    font-family: "Tahoma", sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: ${tokens.BaseColor};
     color: ${tokens.FontColor};
     font-size: ${tokens.FontSizeBase};
