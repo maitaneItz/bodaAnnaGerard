@@ -1,5 +1,5 @@
 import { Container } from "../Container";
-import { Wrapper, ImageTop, Date, InnerWrapper, Title } from "./styles";
+import { Wrapper, Date, InnerWrapper, Title } from "./styles";
 
 export const Header = () => (
   <Wrapper>
