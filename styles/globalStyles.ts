@@ -1,13 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import * as tokens from "../dictionary/variables";
 
-export const GlobalStyles = createGlobalStyle`
-  @font-face {
-    font-family: "Tahoma";
-    src: url("/fonts/Tahoma.ttf");
-    font-weight: 400;
-  }
-  
+export const GlobalStyles = createGlobalStyle`  
   @font-face {
     font-family: "Juana Alt";
     src: url("/fonts/Juana Alt Regular.ttf");
@@ -40,7 +34,8 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
 
     font-family: "Roboto", sans-serif;
-    background-color: ${tokens.BaseColor};
+    // background-color: ${tokens.BaseColor};
+    background-image: url(/images/lightpaperfibers.png);
     color: ${tokens.FontColor};
     font-size: ${tokens.FontSizeBase};
     line-height: 27px;
